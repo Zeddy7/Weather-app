@@ -14,14 +14,6 @@
    --red-buttons: rgb(201, 1, 1);
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-    -webkit-box-shadow:none !; 
-    -webkit-text-fill-color:none !; 
-    transition:none !; 
-}
 * {
    margin: 0;
    padding: 0;
@@ -68,11 +60,14 @@ header {
    padding-left: 2px;
 }
 
+#location:-webkit-autofill {
+    background-color: inherit;
+}
+
 #location:active {
    background-color: inherit;
    border-bottom: 2px solid var(--primary-color);
 }
-
 #container {
    display: flex;
    flex-direction: column;

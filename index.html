@@ -5,21 +5,31 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="stylesheet" href="style.css" />
       <title>Weather App</title>
+      <link rel="shortcut icon" href="./images/hail.png" type="image/x-icon">
    </head>
    <body>
       <header>
          <div class="title">
-            <img src="./images/sun.svg" />
+            <svg
+               xmlns="http://www.w3.org/2000/svg"
+               height="24px"
+               viewBox="0 -960 960 960"
+               width="24px"
+               fill="yellow">
+               <path
+                  d="M440-760v-160h80v160h-80Zm266 110-55-55 112-115 56 57-113 113Zm54 210v-80h160v80H760ZM440-40v-160h80v160h-80ZM254-652 140-763l57-56 113 113-56 54Zm508 512L651-255l54-54 114 110-57 59ZM40-440v-80h160v80H40Zm157 300-56-57 112-112 29 27 29 28-114 114Zm283-100q-100 0-170-70t-70-170q0-100 70-170t170-70q100 0 170 70t70 170q0 100-70 170t-170 70Z" />
+            </svg>
             <h1>zeeWeather</h1>
          </div>
          <div class="search-form">
-            <input type="search" id="location" placeholder="Enter a location" />
-            <img src="./images/search.svg" class="search-location"/>
+            <input type="search" id="location" placeholder="Enter a location" autocomplete="off" />
+            <img src="./images/search.svg" class="search-location" />
          </div>
       </header>
       <div id="container">
-         <h1 class="main-forecast">Lagos</h1>
-         <h1 class="temperature">temp</h1>
+         <h1 class="main-forecast"></h1>
+         <h1 class="temperature"></h1>
+         <!-- <p class="highs">High: Low:</p> -->
       </div>
       <script src="script.js"></script>
    </body>
