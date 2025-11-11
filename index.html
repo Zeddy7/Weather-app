@@ -8,13 +8,19 @@
    </head>
    <body>
       <header>
-         <h1>zeeWeather</h1>
+         <div class="title">
+            <img src="./images/sun.svg" />
+            <h1>zeeWeather</h1>
+         </div>
          <div class="search-form">
             <input type="search" id="location" placeholder="Enter a location" />
-            <label for="location"><img src="./images/search.svg"></label>
+            <img src="./images/search.svg" class="search-location"/>
          </div>
       </header>
-      <div id="container"></div>
+      <div id="container">
+         <h1 class="main-forecast">Lagos</h1>
+         <h1 class="temperature">temp</h1>
+      </div>
       <script src="script.js"></script>
    </body>
 </html>
